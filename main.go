@@ -21,6 +21,7 @@ func main() {
 	if err != nil {
 		log.WithError(err).Panic("Can't initialize the service ...")
 	}
+	defer app.CloseAll()
 
 	service.AddRoutes(app)
 
