@@ -7,6 +7,6 @@ require (
 	github.com/briandowns/spinner v1.8.0
 	github.com/gin-gonic/gin v1.5.0
 	github.com/orov-io/BlackBart v0.0.6
-	github.com/orov-io/BlackBeard v0.0.1
+	github.com/orov-io/BlackBeard v0.0.4
 	github.com/smartystreets/goconvey v1.6.4
 )

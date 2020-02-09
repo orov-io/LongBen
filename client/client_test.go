@@ -16,9 +16,9 @@ const (
 
 func TestPing(t *testing.T) {
 	Convey(givenAClient, t, func() {
-
+		serviceClient := client.NewWithDefaults()
 		Convey(callHandlerByService, func() {
-			pong, err := client.Ping()
+			pong, err := serviceClient.Ping()
 			Convey(responseShouldBeOK, func() {
 
 				So(err, ShouldBeNil)
